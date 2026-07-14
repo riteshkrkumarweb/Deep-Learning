@@ -1,0 +1,21 @@
+# Problems with the Perceptron
+
+* **Works only for linearly separable data** – It can classify data only if a single straight line (or hyperplane) separates the classes.
+
+* **Cannot solve the XOR problem** – XOR is a non-linearly separable problem, so a single perceptron cannot learn it.
+
+* **Binary output only** – It predicts only **0** or **1** and does not provide probability estimates.
+
+* **Uses a step activation function** – The step function is non-differentiable, so gradient-based learning methods cannot be used.
+
+* **Cannot learn complex patterns** – It cannot model nonlinear or curved decision boundaries.
+
+* **Sensitive to noise and outliers** – Incorrect or noisy data can reduce its performance.
+
+* **No guaranteed convergence for non-linearly separable data** – It may continue updating its weights without finding a perfect solution.
+
+* **Designed for binary classification** – The original perceptron is intended for two-class classification problems.
+
+## Key Point
+
+The **biggest limitation of the perceptron** is that it **can only solve linearly separable problems**. This limitation led to the development of **Multilayer Perceptrons (MLPs)** and modern neural networks.
