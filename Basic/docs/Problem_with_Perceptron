@@ -19,3 +19,5 @@
 ## Key Point
 
 The **biggest limitation of the perceptron** is that it **can only solve linearly separable problems**. This limitation led to the development of **Multilayer Perceptrons (MLPs)** and modern neural networks.
+
+Visualize with the website :- https://playground.tensorflow.org/
