@@ -171,7 +171,7 @@ a[l] = σ(z[l])
 where
 
 ```text
-a⁰ = x
+a⁰ = x [input Layer]
 ```
 
 ---
