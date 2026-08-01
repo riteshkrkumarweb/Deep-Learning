@@ -1,4 +1,4 @@
-# 📘 Deep Learning Loss Functions – Revision Notes
+# 📘 Deep Learning Loss Functions – (See Day 14 in notes for mathematical formula, it doesnot included)
 
 ## 🎯 What is a Loss Function?
 
@@ -12,20 +12,6 @@ A **Loss Function** measures how much the model's prediction differs from the ac
 
 ### Used For
 * Regression
-
-### Formula
-
-Single Sample
-
-\[
-(y-\hat{y})^2
-\]
-
-Dataset
-
-\[
-MSE=\frac1n\sum(y-\hat{y})^2
-\]
 
 ### Intuition
 
@@ -57,20 +43,6 @@ Error = 5 → Loss = 25
 
 * Regression
 
-### Formula
-
-Single Sample
-
-\[
-|y-\hat{y}|
-\]
-
-Dataset
-
-\[
-MAE=\frac1n\sum|y-\hat{y}|
-\]
-
 ### Intuition
 
 Uses the **absolute value**, so positive and negative errors do not cancel each other.
@@ -100,16 +72,6 @@ Example
 ### Used For
 
 * Regression with outliers
-
-### Formula
-
-\[
-L=
-\begin{cases}
-\frac12(y-\hat y)^2,& |y-\hat y|\le\delta\\
-\delta|y-\hat y|-\frac12\delta^2,& |y-\hat y|>\delta
-\end{cases}
-\]
 
 ### Intuition
 
@@ -146,20 +108,15 @@ Large Error
 
 * Binary Classification (2 Classes)
 
-Examples
+### Examples
 
 * Yes / No
 * Spam / Not Spam
+* Pass / Fail
 
 ### Activation Function
 
 * Sigmoid
-
-### Formula
-
-\[
--\left[y\log(\hat y)+(1-y)\log(1-\hat y)\right]
-\]
 
 ### Intuition
 
@@ -198,17 +155,14 @@ Example
 
 ```
 Yes
-
 ↓
 
 [1 0 0]
 ```
 
-### Formula
+### Intuition
 
-\[
--\sum y\log(\hat y)
-\]
+Checks whether the model gives the **highest probability to the correct class**.
 
 ### Advantages
 
@@ -245,11 +199,9 @@ No → 1
 Maybe → 2
 ```
 
-### Formula
+### Intuition
 
-\[
--\log(\hat y_{\text{correct class}})
-\]
+Same as CCE, but uses **integer labels instead of One-Hot Encoding**.
 
 ### Advantages
 
