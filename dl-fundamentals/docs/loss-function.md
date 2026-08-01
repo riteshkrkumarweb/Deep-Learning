@@ -1,4 +1,4 @@
-# 📘 Deep Learning Loss Functions – (See Day 14 in notes for mathematical formula, it doesnot included)
+# 📘 Deep Learning Loss Functions – ( Mathematical formula of all see in the dl-fundametal/image/loss-function-mathematical-formula, it doesnot included here )
 
 ## 🎯 What is a Loss Function?
 
