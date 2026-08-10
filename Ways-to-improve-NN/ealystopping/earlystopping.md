@@ -1,5 +1,5 @@
-              EARLY STOPPING
-==================================================
+#              EARLY STOPPING
+
 
 Purpose:
     Prevent overfitting by stopping training when
