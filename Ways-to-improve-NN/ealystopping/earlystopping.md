@@ -87,9 +87,8 @@ PARAMETERS
 
    10 -> Start monitoring after epoch 10
 
-==================================================
-BEST SIMPLE SETUP
-==================================================
+
+# BEST SIMPLE SETUP
 
 EarlyStopping(
     monitor="val_loss",
