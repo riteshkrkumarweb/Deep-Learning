@@ -97,3 +97,5 @@ EarlyStopping(
     mode="min",
     restore_best_weights=True
 )
+
+historyl = model.fit(X_train,y_train,epochs=3000,validation_split=0.2,callbacks=earlystop)
