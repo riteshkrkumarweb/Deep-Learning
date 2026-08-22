@@ -1,6 +1,6 @@
 # Weight Initialization in Neural Networks
 
-## 1. Why Weight Initialization Matters
+##  Why Weight Initialization Matters
 
 Weight initialization means assigning initial values to the weights before training.
 
@@ -19,8 +19,9 @@ Poor initialization can cause:
 * Symmetry problems
 
 ---
+# What should We Not Do with the Weight initilazation
 
-## 2. Zero Initialization
+## A. Zero Initialization
 
 Initializing all hidden-layer weights to zero is **not recommended**.
 
@@ -37,7 +38,7 @@ This is called the **symmetry problem**.
 
 ---
 
-## 3. Constant Initialization
+## B. Constant Initialization
 
 Example:
 
@@ -55,7 +56,7 @@ The problem is:
 
 ---
 
-## 4. Random Initialization
+##  Random Initialization
 
 Random initialization gives different neurons different starting weights.
 
@@ -68,7 +69,7 @@ But the random values should have an **appropriate scale**.
 
 ---
 
-## 5. Very Small Random Weights
+## C . Very Small Random Weights
 
 If weights are extremely small:
 
@@ -79,7 +80,7 @@ If weights are extremely small:
 
 ---
 
-## 6. Very Large Random Weights
+## D. Very Large Random Weights
 
 If weights are extremely large:
 
@@ -91,7 +92,7 @@ If weights are extremely large:
 
 ---
 
-## 7. Vanishing Gradient
+##  Vanishing Gradient
 
 The gradient becomes extremely small as it is propagated backward through the network.
 
@@ -103,7 +104,7 @@ Result:
 
 ---
 
-## 8. Exploding Gradient
+##  Exploding Gradient
 
 The gradient becomes extremely large.
 
@@ -115,7 +116,7 @@ Result:
 
 ---
 
-## 9. Saturation
+##  Saturation
 
 Sigmoid and Tanh can become almost flat at their extreme values.
 
@@ -126,7 +127,7 @@ When the activation is saturated:
 
 ---
 
-# 10. Xavier / Glorot Initialization
+#  Xavier / Glorot Initialization
 
 Xavier initialization is commonly used with:
 
@@ -152,7 +153,7 @@ You only need to choose **one**.
 
 ---
 
-# 11. He Initialization
+#  He Initialization
 
 He initialization is commonly used with:
 
@@ -179,7 +180,7 @@ Again, choose **one**.
 
 ---
 
-# 12. Normal vs Uniform Distribution
+#  Normal vs Uniform Distribution
 
 ### Normal Distribution
 
@@ -196,7 +197,7 @@ Again, choose **one**.
 
 ---
 
-# 13. Xavier vs He
+#  Xavier vs He
 
 | Activation | Recommended Initialization |
 | ---------- | -------------------------- |
@@ -214,7 +215,7 @@ Each has two variants:
 
 ---
 
-## 14. Final Cheat Sheet
+##  Final Cheat Sheet
 
 ```text
 Weight Initialization
