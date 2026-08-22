@@ -250,7 +250,7 @@ Weight Initialization
 > **Hidden-layer weights should not all start with the same value.**
 
 # Cheat Seat 
-
+```text
 Weight Initialization
         │
         ├── Zero ❌
