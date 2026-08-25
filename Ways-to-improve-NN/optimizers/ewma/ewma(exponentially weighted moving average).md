@@ -134,4 +134,4 @@ This helps reduce noisy or rapidly changing gradient updates.
 
 > **EWMA is a smoothing technique that gives more importance to recent data while gradually reducing the influence of older data.**
 
-![alt text](image-1.png)
+
