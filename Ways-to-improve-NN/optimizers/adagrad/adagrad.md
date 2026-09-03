@@ -389,3 +389,20 @@ Small accumulated gradient → Relatively speed up
 
 AdaGrad is an optimizer that adapts the learning rate
 for each parameter using the accumulated squared gradients.
+
+
+# Sparse Data
+
+Sparse data = Data in which most values are 0
+and only a few values are non-zero.
+
+Example:
+[0, 0, 1, 0, 0, 1, 0]
+
+Examples:
+◇ Text data
+◇ One-hot encoded data
+◇ Recommendation systems
+
+AdaGrad works well with sparse data because
+rare features can get relatively larger updates.
