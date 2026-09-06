@@ -508,3 +508,5 @@ tuner.search_space_summary()
 # 7. Build/retrain final model
 #
 # 8. Evaluate final model
+
+# For more u can visit the link or documentation of the keras_tuner https://keras.io/keras_tuner/
