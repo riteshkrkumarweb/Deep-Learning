@@ -895,3 +895,4 @@ Global Max Pooling
 ### One-Line Definition
 
 > **Pooling is a downsampling technique used in CNNs to reduce the spatial dimensions of feature maps while retaining important information and providing some robustness to small changes in feature location.**
+# Max Pooling website is http://sharetechnote.com/html/WebProgramming/Websim_ConvPoolI.html
