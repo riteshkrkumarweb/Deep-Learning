@@ -73,4 +73,3 @@ Test       → No augmentation ❌
 
 > Data augmentation increases the variety of training examples through transformations such as flipping, rotation, zooming, and translation, helping the model reduce overfitting and generalize better.
 
-# U can see the pretrained Model on keras pretrained model. https://keras.io/api/applications/
