@@ -1,7 +1,9 @@
 # Embedding in NLP
 
 ##  What Is an Embedding?
-An **embedding** is a numerical representation of a token as a vector of multiple values.
+An **embedding** is a numerical representation of a token as a vector of multiple values
+or 
+An embedding is a numerical representation of a token as a vector of multiple values in a high-dimensional space, such as 2D, 3D, 4D, 128D, 256D, etc.
 
 We already converted text into integer IDs:
 
