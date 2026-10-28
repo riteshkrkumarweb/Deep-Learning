@@ -1,4 +1,7 @@
 # Attention Mechanism 
+# What is the Attention Mechanism?
+The Attention Mechanism is a technique that allows a neural network to focus on the most relevant parts of the input when generating an output.
+In simple terms, it helps the model decide which information is important right now.
 
 ##  Why Attention Is Needed
 
