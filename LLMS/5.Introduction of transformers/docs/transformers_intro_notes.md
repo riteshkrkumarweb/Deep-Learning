@@ -96,7 +96,7 @@ Input: `I love learning AI`
 5. **Limited interpretability:** Transformers are often treated as black-box models, making their decisions difficult to explain.
 6. **Bias and ethical concerns:** Biases in training data may appear in model outputs; data collection can also raise legal and ethical concerns.
 
-##  Future Directions Mentioned in the Transcript
+##  Future Directions Of Transformers
 
 1. **Efficiency improvements:** Reduce model size using pruning, quantization, and knowledge distillation.
 2. **Expanded multimodal capabilities:** Improve support for images, speech, sensory data, and time-series data.
