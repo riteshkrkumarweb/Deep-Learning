@@ -174,7 +174,7 @@ The whole pipeline runs **in parallel on GPUs** and forms the core of modern Tra
 - Final formula: **Y = Softmax(Q·Kᵀ) · V**
 
 
-Your question is:
+## Your question is:
 
 If the dot product already calculates a similarity score between two vectors, why do we need Query, Key, Value and their weight matrices?
 
