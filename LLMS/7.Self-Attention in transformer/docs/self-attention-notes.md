@@ -176,7 +176,7 @@ The whole pipeline runs **in parallel on GPUs** and forms the core of modern Tra
 
 ## Your question is:
 
-If the dot product already calculates a similarity score between two vectors, why do we need Query, Key, Value and their weight matrices?
+**If the dot product already calculates a similarity score between two vectors, why do we need Query, Key, Value and their weight matrices?**
 
 The answer is that the dot product only calculates a score. It does not decide by itself what information to search for, what information to match, or what information to collect.
 
