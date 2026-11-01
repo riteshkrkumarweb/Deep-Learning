@@ -172,3 +172,38 @@ The whole pipeline runs **in parallel on GPUs** and forms the core of modern Tra
 - Weights come from **dot-product similarity + softmax**.
 - Adding **Q, K, V with learnable matrices** makes the process task-specific and trainable.
 - Final formula: **Y = Softmax(Q·Kᵀ) · V**
+
+
+Your question is:
+
+If the dot product already calculates a similarity score between two vectors, why do we need Query, Key, Value and their weight matrices?
+
+The answer is that the dot product only calculates a score. It does not decide by itself what information to search for, what information to match, or what information to collect.
+
+Let's understand this step by step.
+1. First, imagine a sentence
+Consider:
+
+"Money grows in the bank."
+
+The Transformer needs to understand the relationships between these words.
+For example:
+- Does money relate to bank?
+- Does money relate to grows?
+- Which words should contribute information to the representation of money?
+This is where Q, K and V come in.
+2. Why do we need Query, Key and Value?
+Think of a library.
+Imagine you want to find information about Machine Learning.
+Transformer	Library example
+Query (Q)	Your search question
+Key (K)	Labels or descriptions of books
+Value (V)	Actual information inside the books
+
+How does it work?
+1. Query: What information am I looking for?
+2. Key: Which information matches my query?
+3. Value: What information should I retrieve?
+The dot product compares the Query with each Key to calculate matching scores.
+
+But the actual information is collected from the Values.
