@@ -84,7 +84,7 @@ The values are separate numbers:
 
 The neural network love using continuous values that change smoothly.
 
-### Problem 3: Relative distance is not represented conveniently
+### Problem 3: Relative distance is not represented conveniently(clearly)
 
 Absolute position means the location of a token from the beginning of the sentence.
 
