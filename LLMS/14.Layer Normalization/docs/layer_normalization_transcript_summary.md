@@ -1,22 +1,11 @@
 # Layer Normalization in Deep Learning and Transformers
 
-## 1. Overview
 
-This lesson explains:
-- What normalization means in deep learning.
-- Why normalization is useful.
-- How Batch Normalization works.
-- Why Batch Normalization is problematic for variable-length sequential data.
-- How Layer Normalization works.
-- Why Transformers use Layer Normalization.
-
-The main idea:
-
-greater than  **Batch Normalization normalizes across the batch, while Layer Normalization normalizes across the features of each individual example/token.**
+> **Batch Normalization normalizes across the batch, while Layer Normalization normalizes across the features of each individual example/token.**
 
 ---
 
-## 2. What Is Normalization?
+##  What Is Normalization?
 
 Normalization is a mathematical transformation that adjusts data to have certain statistical properties or to fit within a particular range.
 
@@ -49,7 +38,7 @@ $$
 
 ---
 
-## 3. Where Is Normalization Used in Deep Learning?
+##  Where Is Normalization Used in Deep Learning?
 
 Normalization can be applied to two broad kinds of values:
 
@@ -58,7 +47,7 @@ Normalization can be applied to two broad kinds of values:
 
 This lesson focuses mainly on normalizing hidden-layer activations.
 
-## 4. Why Is Normalization Useful?
+##  Why Is Normalization Useful?
 
 The transcript highlights four benefits:
 
@@ -76,7 +65,7 @@ The lesson uses a flower-classification example: a model trained only on red ros
 
 ---
 
-## 5. Batch Normalization
+##  Batch Normalization
 
 ### Meaning
 
@@ -132,7 +121,7 @@ It repeats this process separately for every neuron/feature.
 
 ---
 
-## 6. Why Batch Normalization Is Problematic for Sequential Data
+##  Why Batch Normalization Is Problematic for Sequential Data
 
 Transformers process sequences of tokens. Different sentences can have different lengths.
 
@@ -141,7 +130,7 @@ To place multiple sentences into one batch, shorter sentences are padded so that
 ### Example
 
 ```text
-Sentence 1: [Hi, Bittu, PAD, PAD]
+Sentence 1: [Hi, Nitesh, PAD, PAD]
 Sentence 2: [How, are, you, today]
 ```
 
@@ -165,7 +154,7 @@ This is the central reason given in the transcript for avoiding ordinary BatchNo
 
 ---
 
-## 7. Layer Normalization
+##  Layer Normalization
 
 ### Meaning
 
@@ -219,7 +208,7 @@ It repeats this independently for every token.
 
 ---
 
-## 8. How LayerNorm Handles Padding in the Lesson's Example
+##  How LayerNorm Handles Padding in the Lesson's Example
 
 Consider a padded token whose embedding is:
 
@@ -237,7 +226,7 @@ Therefore, in the lesson's illustrated setup, padding in one sequence does not d
 
 ---
 
-## 9. Batch Normalization vs. Layer Normalization
+##  Batch Normalization vs. Layer Normalization
 
 | Comparison | Batch Normalization | Layer Normalization |
 |---|---|---|
@@ -254,19 +243,19 @@ Therefore, in the lesson's illustrated setup, padding in one sequence does not d
 
 ---
 
-## 10. Layer Normalization in Self-Attention
+##  Layer Normalization in Self-Attention
 
 The transcript uses two sentences:
 
 ```text
-Sentence 1: [Hi, Bittu]
+Sentence 1: [Hi, Nitesh]
 Sentence 2: [How, are, you, today]
 ```
 
 For batching, the first sentence is padded:
 
 ```text
-Sentence 1: [Hi, Bittu, PAD, PAD]
+Sentence 1: [Hi, Nitesh, PAD, PAD]
 Sentence 2: [How, are, you, today]
 ```
 
@@ -289,16 +278,16 @@ LayerNorm works across the three embedding features for each token position inde
 For example:
 
 ```text
-Token 1: [feature 1, feature 2, feature 3] -greater than  normalize these 3 values
-Token 2: [feature 1, feature 2, feature 3] -greater than  normalize these 3 values
-Token 3: [feature 1, feature 2, feature 3] -greater than  normalize these 3 values
+Token 1: [feature 1, feature 2, feature 3] -> normalize these 3 values
+Token 2: [feature 1, feature 2, feature 3] -> normalize these 3 values
+Token 3: [feature 1, feature 2, feature 3] -> normalize these 3 values
 ```
 
 The padded token is handled independently. Its zero values do not affect the mean and variance of the other tokens.
 
 ---
 
-## 11. Important Shape Concept
+##  Important Shape Concept
 
 For the example in the transcript:
 
@@ -319,7 +308,7 @@ The three dimensions mean:
 
 ---
 
-## 12. Final Revision
+##  Final Revision
 
 1. Normalization transforms values to have useful statistical properties.
 2. In deep learning, normalization can be applied to inputs and hidden-layer activations.
@@ -335,27 +324,3 @@ The three dimensions mean:
 **Transformers commonly use Layer Normalization rather than Batch Normalization because LayerNorm normalizes each token representation across its features independently, avoiding the batch-statistics problem caused by padding in variable-length sequences.**
 
 ---
-
-## 13. Quick Self-Test
-
-1. What is the difference between BatchNorm and LayerNorm?
-2. In BatchNorm, along which direction are statistics calculated?
-3. In LayerNorm, which values are used to calculate the mean and standard deviation?
-4. Why can padding be a problem for BatchNorm in variable-length sequences?
-5. If the input tensor shape is `(2, 4, 3)`, what does each dimension represent?
-6. Does LayerNorm change the tensor's shape?
-
-### Answers
-
-1. BatchNorm normalizes across examples; LayerNorm normalizes across features within each example.
-2. Across the batch, separately for each feature.
-3. The features belonging to one example/token.
-4. Padding adds artificial zeros that can distort batch statistics.
-5. Two sequences, four token positions, three features per token.
-6. No. It changes values, not shape.
-
----
-
-## Source Note
-
-These notes summarize the supplied `layer_normalization_transcript.txt` transcript. The examples and explanations follow the lesson's simplified teaching setup.
