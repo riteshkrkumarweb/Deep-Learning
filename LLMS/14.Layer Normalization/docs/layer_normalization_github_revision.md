@@ -141,7 +141,7 @@ To place multiple sentences into one batch, shorter sentences are padded so that
 ### Example
 
 ```text
-Sentence 1: [Hi, Nitesh, PAD, PAD]
+Sentence 1: [Hi, Bittu, PAD, PAD]
 Sentence 2: [How, are, you, today]
 ```
 
@@ -259,14 +259,14 @@ Therefore, in the lesson's illustrated setup, padding in one sequence does not d
 The transcript uses two sentences:
 
 ```text
-Sentence 1: [Hi, Nitesh]
+Sentence 1: [Hi, Bittu]
 Sentence 2: [How, are, you, today]
 ```
 
 For batching, the first sentence is padded:
 
 ```text
-Sentence 1: [Hi, Nitesh, PAD, PAD]
+Sentence 1: [Hi, Bittu, PAD, PAD]
 Sentence 2: [How, are, you, today]
 ```
 
